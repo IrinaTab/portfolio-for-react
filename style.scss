@@ -30,6 +30,9 @@ body {
     &__logo {
         width: 70px;
         height: 70px;
+        &:hover {
+            cursor: pointer;
+        }
     }
     &__menu {
         display: flex;
@@ -118,7 +121,7 @@ body {
     grid-template-rows: repeat(11, 1fr);
     &__card {
         border-radius: 30px;
-        padding: 7px;
+        padding: 15px;
         cursor: pointer;
 
         &_first {
@@ -163,6 +166,12 @@ body {
         font-weight: 500;
         color: whitesmoke;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    &__img {
+        width: 80px;
+        align-items: flex-start;
+        padding-top: 10px;
+        
     }
 }
 @import 'aboutme';

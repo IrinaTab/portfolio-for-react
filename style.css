@@ -34,6 +34,9 @@ body {
   width: 70px;
   height: 70px;
 }
+.top__logo:hover {
+  cursor: pointer;
+}
 .top__menu {
   display: flex;
   justify-content: space-between;
@@ -119,7 +122,7 @@ body {
 }
 .descrProject__card {
   border-radius: 30px;
-  padding: 7px;
+  padding: 15px;
   cursor: pointer;
 }
 .descrProject__card_first {
@@ -164,6 +167,11 @@ body {
   color: whitesmoke;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+.descrProject__img {
+  width: 80px;
+  align-items: flex-start;
+  padding-top: 10px;
+}
 
 .aboutme {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -171,7 +179,40 @@ body {
   background-color: rgba(0, 0, 0, 0.04);
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
 }
 .aboutme__img {
-  width: 35vw;
+  width: 50%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.aboutme__wrapper {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+.aboutme__text {
+  text-align: justify;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.aboutme__text_first {
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+.aboutme__text_second {
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
+.aboutme__text_third {
+  grid-column: 1/5;
+  grid-row: 3/4;
+}
+.aboutme__text_fourth {
+  grid-column: 1/5;
+  grid-row: 4/5;
 }/*# sourceMappingURL=style.css.map */

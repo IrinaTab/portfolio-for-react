@@ -4,7 +4,45 @@
     background-color: rgba(0, 0, 0, 0.04);
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
     &__img {
-        width: 35vw;
+        width: 50%;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    &__wrapper {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+    }
+    &__text {
+        text-align: justify;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        &_first {
+            grid-column: 1/5;
+            grid-row: 1/2;
+
+        }
+        &_second {
+            grid-column: 1/5;
+            grid-row: 2/3;
+
+        }
+        &_third {
+            grid-column: 1/5;
+            grid-row: 3/4;
+
+        }
+        &_fourth {
+            grid-column: 1/5;
+            grid-row: 4/5;
+
+        }
+
     }
 }
