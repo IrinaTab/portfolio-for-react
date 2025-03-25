@@ -15,6 +15,9 @@ body {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
+.text__bold {
+    font-weight: bold;
+}
 .top {
     position: sticky;
     top: 0;
@@ -47,6 +50,7 @@ body {
         &:hover {
             color: rgba(0, 0, 0, 0.411);
             text-decoration: underline;
+            text-shadow: rgba(250, 192, 2, 0.918);
         }
     }
 }
@@ -91,6 +95,7 @@ body {
     }
     &__text {
         font-size: 18px;
+        text-align: justify;
         margin-top: 12px;
         color: rgba(0, 0, 0, 0.753);
     }
@@ -175,3 +180,4 @@ body {
     }
 }
 @import 'aboutme';
+@import 'skills';
