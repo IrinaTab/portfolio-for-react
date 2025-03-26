@@ -18,8 +18,17 @@
                 <a href="index.html" class="top__link">Главная</a>
                 <a href="aboutme.html" class="top__link">Обо мне</a>
                 <a href="skills.html" class="top__link">Мои навыки</a>
-                <a href="works" class="top__link">Мои работы</a>
+                <a href="myworks.html" class="top__link">Мои работы</a>
             </nav>
+            <div class="burger">
+                <button class="burger-btn"></button>
+                <nav class="burger-menu">
+                    <a href="index.html" class="burger-link">Главная</a>
+                    <a href="aboutme.html" class="burger-link">Обо мне</a>
+                    <a href="skills.html" class="burger-link">Мои навыки</a>
+                    <a href="myworks.html" class="burger-link">Мои работы</a>
+                </nav>
+            </div>
         </div>
     </header>
     <section class="content">
@@ -30,7 +39,9 @@
             <h2 class="content__title content__title_smaller">Freelance</h2>
             <h2 class="content__title content__title_small">Образование, курсы</h2>
             <p class="content__text">2004 - Приазовский государственный технический университет, 
-                экономика предприятия / бухгалтерский учет и аудит; <br/> 2024 - Онлайн-университет Skypro, Веб-разработка для фриланса</p>
+                экономика предприятия / бухгалтерский учет и аудит;
+            </p>
+            <p class="content__text">2024 - Онлайн-университет Skypro, Веб-разработка для фриланса</p>
             <div class="content__contacts">
                 <h2 class="content__title content__title_small">Контакты</h2>
                 <div class="content__icons">
@@ -43,20 +54,25 @@
         <div class="descrProject">
             <div class="descrProject__card descrProject__card_first">
                 <h3 class="descrProject__title">Сайт интернет-магазина Мебели</h3>
-                <!-- <p class="descrProject__text">Моя первая работа по верстке, выполнена в рамках курсового проекта</p> -->
                 <img src="img/project-1-mob.png" alt="" class="descrProject__img">
             </div>
             <div class="descrProject__card descrProject__card_second">
                 <h3 class="descrProject__title">Сайт с мини-играми</h3>
-                <!-- <p class="descrProject__text">Создание увлекательного и функционального сайта с мини-играми для развлечения пользователей</p> -->
                 <img src="img/project-2-mob.png" alt="" class="descrProject__img">
             </div>
             <div class="descrProject__card descrProject__card_third">
-                <h3 class="descrProject__title">Сайт компании Аудит бухгалтерского учета</h3>
-                <!-- <p class="descrProject__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, architecto ipsam. Quaerat error quas ullam minima necessitatibus expedita. Ut, facere?</p> -->
+                <h3 class="descrProject__title">Сайт компании Аудит бухгалтерского учета (Tilda)</h3>
                 <img src="img/project-3-mob.png" alt="" class="descrProject__img">
             </div>
         </div>
     </section>
+    <script>
+        const burgerBtn = document.querySelector('.burger-btn');
+        const burgerMenu = document.querySelector('.burger-menu');
+
+        burgerBtn.addEventListener('click', function() {
+            burgerMenu.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

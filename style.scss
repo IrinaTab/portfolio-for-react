@@ -12,8 +12,8 @@ body {
   font-weight: 500;
 }
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 700px);
+    padding-right: calc(50% - 700px);
 }
 .text__bold {
     font-weight: bold;
@@ -54,6 +54,9 @@ body {
         }
     }
 }
+.burger {
+    display: none;
+}
 .content {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -67,6 +70,7 @@ body {
     }
     &__photo {
         width: 250px;
+        border-radius: 30px;
         transition: transform 0.5s;
         &:hover {
             transform: translateX(30px) scale(1.2);
@@ -95,7 +99,7 @@ body {
     }
     &__text {
         font-size: 18px;
-        text-align: justify;
+        // text-align: justify;
         margin-top: 12px;
         color: rgba(0, 0, 0, 0.753);
     }
@@ -113,28 +117,30 @@ body {
         transition: transform 0.5s;
         &:hover {
             transform: scale(1.2);
+            cursor: pointer;
         }
         
     }
 }
 .descrProject {
+    width: 68vw;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.04);
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     &__card {
+        background-size: 100%;
+        background-repeat: no-repeat;
         border-radius: 30px;
         padding: 15px;
         cursor: pointer;
 
         &_first {
             background-image: url(img/project-1.png);
-            background-size: cover;
-            background-repeat: no-repeat;
             grid-column: 1/10;
-            grid-row: 1/5;
+            grid-row: 1/3;
             transition: transform 0.5s;
             &:hover {
                 z-index: 2;
@@ -143,10 +149,8 @@ body {
         }
         &_second {
             background-image: url(img/project-2.png);
-            background-size: cover;
-            background-repeat: no-repeat;
             grid-column: 2/11;
-            grid-row: 4/8;
+            grid-row: 2/4;
             transition: transform 0.5s;
             &:hover {
                 z-index: 2;
@@ -155,10 +159,8 @@ body {
         }
         &_third {
             background-image: url(img/project-3.png);
-            background-size: cover;
-            background-repeat: no-repeat;
             grid-column: 3/12;
-            grid-row: 7/11;
+            grid-row: 3/5;
             transition: transform 0.5s;
             &:hover {
                 z-index: 2;
@@ -181,3 +183,5 @@ body {
 }
 @import 'aboutme';
 @import 'skills';
+@import 'myworks';
+@import 'adaptiv-style';

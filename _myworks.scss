@@ -1,0 +1,58 @@
+.works {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.04);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__title {
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    width: 28%;
+    box-shadow: 0 8px 16px 0 rgba(243, 139, 2, 0.87);
+    padding: 20px;
+    &__img {
+        width: 98%;
+        height: 50%;
+        border-radius: 30px;
+    }
+    &__title {
+        color: rgba(0, 0, 0, 0.767);
+        font-size: 18px;
+    }
+    &__text {
+        color: rgba(0, 0, 0, 0.767);
+        font-size: 14px;
+        text-align: justify;
+    }
+    &__link {
+        color: rgb(0, 0, 0);
+        transition: all 0.3s ease;
+        text-decoration: underline;
+        &:hover {
+            font-weight: bolder;
+            color: rgba(0, 0, 0, 0.767);
+            text-shadow: -5px -5px 15px rgb(95, 95, 95);
+            transform: scale(1.03);
+        }
+    }
+
+}
