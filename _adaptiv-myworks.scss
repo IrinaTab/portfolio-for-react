@@ -1,0 +1,29 @@
+@media (max-width: 1024px) {
+    .works {
+        &__wrapper {
+            justify-content: center;
+   
+        }
+    }
+    .card {
+        width: 40%;
+    }
+}
+@media (max-width: 670px) {
+    .works {
+        &__title {
+            text-align: center;
+        }
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+    .card {
+        width: 65%;
+    }
+}
+@media (max-width: 425px) {
+    .card {
+        width: 85%;
+    }
+}

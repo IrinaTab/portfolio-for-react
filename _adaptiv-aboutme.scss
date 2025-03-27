@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+    .aboutme__text {
+        font-size: 14px;
+    }
+}
+@media (max-width: 740px) {
+    .aboutme{
+        flex-direction: column;
+        align-items: center;
+        &__img {
+            width: 85%;
+            opacity: 0; /* Начальная прозрачность текста */
+            transform: translateX(20px); /* Начальное смещение текста */
+            transition: opacity 0.5s, transform 0.5s; /* Длительность и свойства анимации */
+            &.visible {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        &__wrapper {
+            width: 85%;
+        }
+        &__text {
+            opacity: 0; /* Начальная прозрачность текста */
+            transform: translateY(20px); /* Начальное смещение текста */
+            transition: opacity 0.5s, transform 0.5s; /* Длительность и свойства анимации */
+            &.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}

@@ -144,9 +144,10 @@
     .burger-btn {
         background-image: url(img/burger.svg); /* Цвет фона кнопки */
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 30px 40px;
+        background-position: center;
         background-color: transparent;
-        width: 40px;
+        width: 50px;
         height: 40px;
         border: none; /* Отсутствие границы у кнопки */
         cursor: pointer; /* Курсор в виде руки при наведении */
@@ -172,8 +173,6 @@
     .burger-menu.show {
         display: block;
     }
-    
-    
     .content {
         flex-direction: column;
         align-items: center;

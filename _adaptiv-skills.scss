@@ -1,0 +1,26 @@
+@media (max-width: 600px) {
+    .skills {
+        &__title {
+            font-size: 24px;
+            text-align: center;
+        }
+        &__text {
+            font-size: 14px;
+            opacity: 0; /* Начальная прозрачность текста */
+            transform: translateY(20px); /* Начальное смещение текста */
+            transition: opacity 0.5s, transform 0.5s; /* Длительность и свойства анимации */
+            &.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        &__wrapper {
+            gap: 30px;
+            background-image: url(img/kub.png);
+            background-repeat: no-repeat;
+            background-size: 150px;
+        }
+    
+    }
+}
+    
