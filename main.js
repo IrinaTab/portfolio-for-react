@@ -10,7 +10,7 @@ burgerBtn.addEventListener('click', function() {
     animatedAboutMeImg.forEach((text, index) => {
       setTimeout(() => {
         text.classList.add('visible');
-      }, (index + 1) * 1000); // Задержка в 500 мс между каждым текстом
+      }, (index + 1) * 700); // Задержка в 500 мс между каждым текстом
     });
   });
   document.addEventListener('DOMContentLoaded', () => {
@@ -19,7 +19,7 @@ burgerBtn.addEventListener('click', function() {
     animatedAboutMeText.forEach((text, index) => {
       setTimeout(() => {
         text.classList.add('visible');
-      }, (index + 1) * 1000); // Задержка в 500 мс между каждым текстом
+      }, (index + 1) * 700); // Задержка в 500 мс между каждым текстом
     });
   });
   document.addEventListener('DOMContentLoaded', () => {
